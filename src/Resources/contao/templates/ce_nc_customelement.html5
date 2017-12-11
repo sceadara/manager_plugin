@@ -1,0 +1,19 @@
+<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?>
+    style="<?= $this->style ?>"<?php endif; ?>>
+
+    <?php if ($this->headline): ?>
+    <<?= $this->hl ?> class="headline">
+    <span><?= $this->headline ?></span>
+    <?php if ($this->secondline): ?>
+    <span class="secondline"><?= $this->secondline ?></span>
+    <?php endif; ?>
+    </<?= $this->hl ?>>
+    <?php endif; ?>
+
+    <?php if ($this->subheadline): ?>
+    <<?= $this->shl ?> class="subheadline">
+    <span><?= $this->subheadline ?></span>
+    </<?= $this->shl ?>>
+    <?php endif; ?>
+
+</div>

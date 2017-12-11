@@ -1,0 +1,33 @@
+{
+    "name": "nacore/headline",
+    "type": "contao-bundle",
+    "description": "Nandecore Custom Element Headline",
+    "license": "CC",
+    "homepage": "https://nandecore.net",
+    "authors": [
+        {
+            "name": "Chris Kirchmaier",
+            "email": "ck@nandecore.net",
+            "homepage": "https://nandecore.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "contao/core-bundle": "~4.4"
+    },
+    "require-dev": {
+        "phpcq/all-tasks": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "NaCore\\Bundle\\CustomElement\\": "src"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin":"NaCore\\Bundle\\CustomElement\\ContaoManager\\Plugin",
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
